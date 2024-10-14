@@ -8,7 +8,7 @@ namespace Tyuiu.BabaiKV.Sprint2.Task3.V28.Lib
             double y = 0;
             if (x>1) 
             {
-                y= x+Math.Pow(Math.Pow(Math.Cos(x),2)/(x-1),(x+3));
+                y = x + Math.Pow((Math.Cos(Math.Pow(x, 2))) / (x - 1), x + 3);
             }
             else
             {
