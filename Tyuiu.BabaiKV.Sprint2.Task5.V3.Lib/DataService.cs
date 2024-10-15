@@ -9,43 +9,29 @@ namespace Tyuiu.BabaiKV.Sprint2.Task5.V3.Lib
             switch (value)
             {
                 case 1:
-                    res = "Январь";
+                    res = "Понедельник";
                     break;
                 case 2:
-                    res = "Февраль";
+                    res = "Вторник";
                     break;
                 case 3:
-                    res = "Март";
+                    res = "Среда";
                     break;
                 case 4:
-                    res = "Апрель";
+                    res = "Четверг";
                     break;
                 case 5:
-                    res = "Май";
+                    res = "Пятница";
                     break;
                 case 6:
-                    res = "Июнь";
+                    res = "Суббота";
                     break;
                 case 7:
-                    res = "Июль";
+                    res = "Воскресенье";
                     break;
-                case 8:
-                    res = "Август";
-                    break;
-                case 9:
-                    res = "Сентябрь";
-                    break;
-                case 10:
-                    res = "Октябрь";
-                    break;
-                case 11:
-                    res = "Ноябрь";
-                    break;
-                case 12:
-                    res = "Декабрь";
-                    break;
+                
                 default:
-                    throw new ArgumentException($"Месяц должен быть от одного до 12. Значение {value}");
+                    throw new ArgumentException($"День недели должен быть от 1 до 7. Значение {value}");
             }
             return res;
         }

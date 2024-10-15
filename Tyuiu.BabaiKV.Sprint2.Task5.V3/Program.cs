@@ -10,18 +10,18 @@ namespace Tyuiu.BabaiKV.Sprint2.Task5.V3
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите номер месяца:");
-            int nummouth= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите номер дня недели:");
+            int num= Convert.ToInt32(Console.ReadLine());
             
 
             string res;
-            if ((nummouth <1) ||( nummouth>12))
+            if ((num <1) ||( num>7))
             {
                 res = "Введено неверное значение!";
             }
             else
             {
-                res = "Это месяц: " + ds.FindDayName(nummouth);
+                res = "Это день недели: " + ds.FindDayName(num);
             }
 
                 
